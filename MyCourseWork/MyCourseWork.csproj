@@ -117,14 +117,14 @@
     <Compile Include="AuthorizationService\Entities\PhonesEntity.cs" />
     <Compile Include="AuthorizationService\Interface\ILevelManager.cs" />
     <Compile Include="AuthorizationService\MapperProfile.cs" />
-    <Compile Include="CreatingDep.xaml.cs">
-      <DependentUpon>CreatingDep.xaml</DependentUpon>
+    <Compile Include="CreatingApplication.xaml.cs">
+      <DependentUpon>CreatingApplication.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DepartmentListPage.xaml.cs">
-      <DependentUpon>DepartmentListPage.xaml</DependentUpon>
+    <Compile Include="ApplicationsListPage.xaml.cs">
+      <DependentUpon>ApplicationsListPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DepSettingsPage.xaml.cs">
-      <DependentUpon>DepSettingsPage.xaml</DependentUpon>
+    <Compile Include="ApplicationSettingsPage.xaml.cs">
+      <DependentUpon>ApplicationSettingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="EmployeeContext.cs" />
     <Compile Include="GeneralManager.cs" />
@@ -144,15 +144,15 @@
     <Compile Include="UsersListPage.xaml.cs">
       <DependentUpon>UsersListPage.xaml</DependentUpon>
     </Compile>
-    <Page Include="CreatingDep.xaml">
+    <Page Include="CreatingApplication.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DepartmentListPage.xaml">
+    <Page Include="ApplicationsListPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DepSettingsPage.xaml">
+    <Page Include="ApplicationSettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

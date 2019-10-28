@@ -20,16 +20,25 @@ namespace MyCourseWork
     /// <summary>
     /// Логика взаимодействия для DepSettingsPage.xaml
     /// </summary>
-    public partial class DepSettingsPage : Page
+    public partial class ApplicationSettingPage : Page
     {
-        public DepSettingsPage(ApplicationsDto activeUser, Window mainWindow, Window referenceWindow, EmployeeContext employeeContext)
+        public ApplicationSettingPage(ApplicationsDto activeUser, Window referenceWindow, EmployeeContext employeeContext)
         {
             InitializeComponent();
-            _mainWindow = mainWindow;
+            
             _referenceWindow = referenceWindow;
+            _referenceWindow.Content = this;
+
             _activeDep = activeUser;
+
             _employeeContext = employeeContext;
             _employeeManager = new GeneralManager(_employeeContext);
+
+            InitBoxes();
+        }
+
+        private void InitBoxes()
+        {
             Author.Text = _activeDep.Author;
             Brekage.Text = _activeDep.Breakage;
             Room.Text = _activeDep.Room;
@@ -37,8 +46,7 @@ namespace MyCourseWork
             Date.Text = _activeDep.Date;
             Answer.Text = _activeDep.Answer;
         }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void DataChange(object sender, RoutedEventArgs e)
         {
             _activeDep.AppHeader = AppHeader.Text;
             _activeDep.Breakage = Brekage.Text;
@@ -49,13 +57,12 @@ namespace MyCourseWork
             _employeeManager.ChangeDepInfo(_activeDep);
         }
 
-        private Window _mainWindow;
         private ApplicationsDto _activeDep;
         private EmployeeContext _employeeContext;
         private GeneralManager _employeeManager;
         private Window _referenceWindow;
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CloseWindow(object sender, RoutedEventArgs e)
         {
             _referenceWindow.Close();
         }

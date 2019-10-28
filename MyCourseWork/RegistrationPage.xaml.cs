@@ -22,21 +22,24 @@ namespace MyCourseWork
 {
     public partial class RegistrationPage : Page
     {
-        public RegistrationPage(EmployeeContext context, Window mainWindow)
+        public RegistrationPage(EmployeeContext context, Window mainWindow, Window referencesWindow)
         {
             _employeeContext = context;
             _employeeManager = new EmployeeManager(_employeeContext);
             InitializeComponent();
             _mainWindow = mainWindow;
+
+            _referencesWindow = referencesWindow;
+            _referencesWindow.Content = this;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void WindoClose(object sender, RoutedEventArgs e)
         {
-            _mainWindow.Close();
+            _referencesWindow.Close();
         }
 
         //Регистрация
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void DataCheck(object sender, RoutedEventArgs e)
         {
             if (RegistrationDtoCheck())
             {
@@ -57,11 +60,6 @@ namespace MyCourseWork
             _employeeManager.CreateUser(dto);
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            LoginPage loginPage = new LoginPage(_employeeContext, _mainWindow);
-            _mainWindow.Content = loginPage;
-        }
 
         private bool RegistrationDtoCheck()
         {
@@ -90,17 +88,6 @@ namespace MyCourseWork
                 ErrorMiddleNameMessage.Visibility == Visibility.Hidden && ErrorFirstNameMessage.Visibility == Visibility.Hidden &&
                 ErrorSecondNameMessage.Visibility == Visibility.Hidden) { return true; }
             else { return false; }
-        }
-
-
-
-        private EmployeeManager _employeeManager;
-        private EmployeeContext _employeeContext;
-        private Window _mainWindow;
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
 
 
@@ -175,5 +162,9 @@ namespace MyCourseWork
             if (EmailBox.Text == "E-mail") { EmailBox.Text = ""; }
         }
 
+        private EmployeeManager _employeeManager;
+        private EmployeeContext _employeeContext;
+        private Window _mainWindow;
+        private Window _referencesWindow;
     }
 }

@@ -22,11 +22,13 @@ namespace MyCourseWork
     /// </summary>
     public partial class UserSettingsPage : Page
     {
-        public UserSettingsPage(FullEmployeeDto activeUser, Window mainWindow, Window referenceWindow, EmployeeContext employeeContext)
+        public UserSettingsPage(FullEmployeeDto activeUser, Window referenceWindow, EmployeeContext employeeContext)
         {
             InitializeComponent();
-            _mainWindow = mainWindow;
+
             _referenceWindow = referenceWindow;
+            _referenceWindow.Content = this;
+
             _activeUser = activeUser;
             _employeeContext = employeeContext;
             _employeeManager = new EmployeeManager(_employeeContext);
@@ -49,18 +51,12 @@ namespace MyCourseWork
         }
 
         
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CloseWindow(object sender, RoutedEventArgs e)
         {
-            _mainWindow.Close();
+            _referenceWindow.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-            //        if (_pages.Exists(t => t.Name == "LoginPage"))
-            //{ _mainWindow.Content = _pages.FirstOrDefault(t => t.Name == "LoginPage"); }
-    private void Button_Click_2(object sender, RoutedEventArgs e)
+    private void DataCheck(object sender, RoutedEventArgs e)
         {
             ErrorPasswordMessage.Visibility = PasswordBox.Text.Length < 16 && PasswordBox.Text.Length > 3?
                 Visibility.Hidden : Visibility.Visible;
@@ -151,7 +147,6 @@ namespace MyCourseWork
         }
 
         private Window _mainWindow;
-        private List<Page> _pages;
         private FullEmployeeDto _activeUser;
         private EmployeeContext _employeeContext;
         private EmployeeManager _employeeManager;

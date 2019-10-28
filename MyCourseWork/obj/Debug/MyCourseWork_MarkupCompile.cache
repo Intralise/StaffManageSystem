@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\
+C:\Users\1sire\Desktop\Ssytem\MyCourseWork\obj\Debug\
 MyCourseWork
 none
 false
 DEBUG;TRACE
-C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\App.xaml
-10-1165375765
+C:\Users\1sire\Desktop\Ssytem\MyCourseWork\App.xaml
+102016957441
 
-341000559280
-22-34613277
-CreatingDep.xaml;DepartmentListPage.xaml;DepSettingsPage.xaml;LoginPage.xaml;MainWindow.xaml;ReferenceWindow.xaml;RegistrationPage.xaml;Styles.xaml;UserSettingsPage.xaml;UsersListPage.xaml;
+34-140577864
+2259105725
+CreatingApplication.xaml;ApplicationsListPage.xaml;ApplicationSettingsPage.xaml;LoginPage.xaml;MainWindow.xaml;ReferenceWindow.xaml;RegistrationPage.xaml;Styles.xaml;UserSettingsPage.xaml;UsersListPage.xaml;
 
 False
 

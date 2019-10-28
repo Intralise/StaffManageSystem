@@ -12,6 +12,6 @@
         <Grid.Background>
             <ImageBrush ImageSource="Images/AuthBackground.jpg"/>
         </Grid.Background>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="98,690,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="98,690,0,0" VerticalAlignment="Top" Width="70" />
     </Grid>
 </Window>

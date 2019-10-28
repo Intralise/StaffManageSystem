@@ -18,37 +18,33 @@ using MyCourseWork.AuthorizationService.Dto;
 
 namespace MyCourseWork
 {
-    /// <summary>
-    /// Логика взаимодействия для CreatingDep.xaml
-    /// </summary>
-    public partial class CreatingDep : Page
+    public partial class CreatingApplication : Page
     {
-        public CreatingDep(EmployeeContext context, Window mainWindow)
+        public CreatingApplication(EmployeeContext context, Window refWindow)
         {
+            InitializeComponent();
+
             _employeeContext = context;
             _generalManager = new GeneralManager(_employeeContext);
-            InitializeComponent();
-            _mainWindow = mainWindow;
+
+            _refWindow = refWindow;
+            _refWindow.Content = this;
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void CreateApp(object sender, RoutedEventArgs e)
         {
             ApplicationsDto dto = new ApplicationsDto() { Room = DepFunction.Text,
                 AppHeader = DepName.Text, Breakage = SummaryWorkers.Text, Author = Author.Text, Date = Date.Text, Answer = "Не исправлено" };
-            _generalManager.CreateDepartment(dto);
+            _generalManager.CreateApp(dto);
         }
+
+        private void CloseWindow(object sender, RoutedEventArgs e)
+        {
+            _refWindow.Close();
+        }
+
         private GeneralManager _generalManager;
         private EmployeeContext _employeeContext;
-        private Window _mainWindow;
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            _mainWindow.Close();
-        }
-
-        private void DepFunction_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+        private Window _refWindow;
     }
 }

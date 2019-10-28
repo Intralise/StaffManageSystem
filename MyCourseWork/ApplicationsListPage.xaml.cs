@@ -20,18 +20,17 @@ namespace MyCourseWork
     /// <summary>
     /// Логика взаимодействия для DepartmentListPage.xaml
     /// </summary>
-    public partial class DepartmentListPage : Page
+    public partial class ApplicationsListPage : Page
     {
-        public DepartmentListPage(Window MainWindow, EmployeeContext context)
+        public ApplicationsListPage(Window MainWindow, EmployeeContext context)
         {
             InitializeComponent();
             _employeeContext = context;
             _depManager = new GeneralManager(_employeeContext);
             _mainWindow = MainWindow;
+            _mainWindow.Content = this;
+
             UpdateGridShow();
-            _pages = new List<Page>();
-            _pages.Add(this);
-            this.Name = "UsersPage";
         }
 
         public void UpdateGridShow()
@@ -41,42 +40,6 @@ namespace MyCourseWork
             ApplicationsGrid.ItemsSource = _dep;
         }
 
-
-        private void PhonesGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-
-        private void EmployeesGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            //При нажатии двойном на таблицу
-
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            ////save changes
-            //List<FullEmployeeDto> employees = new List<FullEmployeeDto>();
-            //DataGrid dataGrid = new DataGrid();
-            //dataGrid = (DataGrid)employeesGrid;
-            //string item = dataGrid.Items[0].ToString();
-            //for (int i = 0; i < employeesGrid.Items.Count; i++)
-            //{
-            //    string items = employeesGrid.Items[i].ToString();
-            //    employees.Add(_depManager.GetUserByEmail(employeesGrid.Items[i].ToString()));
-            //}
-            //_depManager.SaveChangesForUsersList(employees);
-            //UpdateGridShow();
-        }
-
-
-        private List<ApplicationsDto> _dep;
-        private GeneralManager _depManager;
-        private EmployeeContext _employeeContext;
-        private Window _mainWindow;
-        private List<Page> _pages;
-
         private void EmployeesGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
 
@@ -84,28 +47,26 @@ namespace MyCourseWork
             dataGrid = (DataGrid)sender;
             string item = ApplicationsGrid.SelectedValue.ToString();
             ReferenceWindow referenceWindow = new ReferenceWindow();
-            DepSettingsPage page = new DepSettingsPage(_depManager.GetDepByName(item), referenceWindow, referenceWindow, _employeeContext);
+            ApplicationSettingPage page = new ApplicationSettingPage(_depManager.GetDepByName(item), referenceWindow, _employeeContext);
             referenceWindow.Content = page;
             referenceWindow.Show();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CreateApplication(object sender, RoutedEventArgs e)
         {
             ReferenceWindow referenceWindow = new ReferenceWindow();
-            CreatingDep page = new CreatingDep(_employeeContext, referenceWindow);
+            CreatingApplication page = new CreatingApplication(_employeeContext, referenceWindow);
             referenceWindow.Content = page;
             referenceWindow.Show();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void AppClose(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void DeleteApplication(object sender, RoutedEventArgs e)
         {
-            //удаление отдела
-
             DataGrid dataGrid = new DataGrid();
             dataGrid = (DataGrid)ApplicationsGrid;
             if (dataGrid.SelectedValue.ToString() != null)
@@ -116,21 +77,12 @@ namespace MyCourseWork
             UpdateGridShow();
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void UpdateTable(object sender, RoutedEventArgs e)
         {
             UpdateGridShow();
-
         }
 
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            //ReferenceWindow referenceWindow = new ReferenceWindow();
-            //DepartmentListPage page = new DepartmentListPage();
-            //referenceWindow.Content = page;
-            //referenceWindow.Show();
-        }
-
-        private void Button_Click_8(object sender, RoutedEventArgs e)
+        private void ExportToExcel(object sender, RoutedEventArgs e)
         {
             Microsoft.Office.Interop.Excel.Application app = null;
             Microsoft.Office.Interop.Excel.Workbook wb = null;
@@ -153,7 +105,7 @@ namespace MyCourseWork
             ws.Columns.EntireColumn.AutoFit();
         }
 
-        private void Button_Click_6(object sender, RoutedEventArgs e)
+        private void DateTimeSearch(object sender, RoutedEventArgs e)
         {
             DateTime StartDate = DateTime.ParseExact($"{FirstDate.Text} 00:00:00,531", "yyyy.MM.dd HH:mm:ss,fff",
                                        System.Globalization.CultureInfo.InvariantCulture);
@@ -176,17 +128,20 @@ namespace MyCourseWork
             ApplicationsGrid.ItemsSource = UpdatedGrid;
         }
 
-        private void Button_Click_7(object sender, RoutedEventArgs e)
+        private void LogOut(object sender, RoutedEventArgs e)
         {
-            LoginPage userSettingsPage = new LoginPage
-            (_employeeContext, _mainWindow);
-            _mainWindow.Content = userSettingsPage;
+            LoginPage userSettingsPage = new LoginPage(_employeeContext, _mainWindow);
         }
 
-        private void Button_Click_9(object sender, RoutedEventArgs e)
+        private void ShowUsersMenu(object sender, RoutedEventArgs e)
         {
             UsersListPage page = new UsersListPage(_mainWindow, _employeeContext);
-            _mainWindow.Content = page;
         }
+
+        private List<ApplicationsDto> _dep;
+        private GeneralManager _depManager;
+        private EmployeeContext _employeeContext;
+        private Window _mainWindow;
+        private List<Page> _pages;
     }
 }

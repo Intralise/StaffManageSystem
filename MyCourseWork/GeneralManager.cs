@@ -17,6 +17,14 @@ namespace MyCourseWork
             _dbContext = dbContext;
         }
 
+        public bool DataExists()
+        {
+            if (!(_dbContext.AcceptLevel.Any() && _dbContext.Applications.Any() &&
+                _dbContext.AuthDate.Any() && _dbContext.Employee.Any() &&
+                _dbContext.Phones.Any()))
+            { return false; }
+            else { return true; }
+        }
         public IEnumerable<ApplicationsDto> GetAllDepartments()
         {
             List<ApplicationsDto> allDep = new List<ApplicationsDto>();
@@ -49,7 +57,7 @@ namespace MyCourseWork
             return dto;
         }
 
-        public ApplicationsDto CreateDepartment(ApplicationsDto registrationDto)
+        public ApplicationsDto CreateApp(ApplicationsDto registrationDto)
         {
             ApplicationsEntity depEntity = new ApplicationsEntity()
             {

@@ -28,25 +28,18 @@ namespace MyCourseWork
         public MainWindow()
         {
             InitializeComponent();
+
+            _employeeContext = new EmployeeContext();
+            _employeeContext.Database.CreateIfNotExists();
+
             Mapper.Initialize(cfg =>
             {
                 cfg.AddProfile(new MapperProfile());
             });
-            _pages = new List<Page>();
-            _employeeContext = new EmployeeContext();
-            _employeeContext.Database.CreateIfNotExists();
-            this.Content = new LoginPage(_employeeContext, this);
+
+            LoginPage page = new LoginPage(_employeeContext, this);
         }
 
-
-        protected EmployeeManager _employeeManager;
         protected EmployeeContext _employeeContext;
-
-        protected List<Page> _pages;
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

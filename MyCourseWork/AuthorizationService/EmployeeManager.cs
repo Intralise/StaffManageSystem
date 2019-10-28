@@ -15,6 +15,7 @@ namespace MyCourseWork.AuthorizationService
             _dbContext = dbContext;
         }
 
+
         public bool UserExists(int idEmployee)
         {
             return _dbContext.Employee.Any(t => t.IdEmployee == idEmployee);
