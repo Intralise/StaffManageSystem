@@ -1,0 +1,236 @@
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csprojAssemblyReference.cache
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.g.cs
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\App.g.cs
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.cache
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.lref
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe.config
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.pdb
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.dll
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.dll
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.dll
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.pdb
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.xml
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.xml
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.xml
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.baml
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.g.resources
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.Properties.Resources.resources
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.GenerateResource.cache
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.CoreCompileInputs.cache
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.CopyComplete
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.exe
+C:\Users\Владелец\source\repos\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.pdb
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csprojResolveAssemblyReference.cache
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.g.cs
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\obj\Debug\App.g.cs
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.cache
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.lref
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.exe
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.pdb
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.dll
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe.config
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.pdb
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.dll
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.dll
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\PresentationFramework.dll
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.dll
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.pdb
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.xml
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.xml
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.xml
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.baml
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.g.resources
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.Properties.Resources.resources
+C:\Users\29221816\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.GenerateResource.Cache
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe.config
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.pdb
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.dll
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.dll
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\PresentationFramework.dll
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.dll
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.pdb
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.xml
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.xml
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.xml
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csprojResolveAssemblyReference.cache
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.g.cs
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\App.g.cs
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.cache
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.lref
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\App.baml
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.baml
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\Styles.baml
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.g.resources
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.Properties.Resources.resources
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.GenerateResource.Cache
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.exe
+C:\Users\29221816.CLASS\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.pdb
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.dll
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\PresentationFramework.dll
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.dll
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.pdb
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.xml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.xml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.xml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\App.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.cache
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.lref
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\App.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\Styles.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.g.resources
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.Properties.Resources.resources
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.GenerateResource.cache
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.CoreCompileInputs.cache
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.exe
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.pdb
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe.config
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.pdb
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.CopyComplete
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\RegistrationPage.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\RegistrationPage.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\LoginPage.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\LoginPage.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\UserSettingsPage.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\UserSettingsPage.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\UsersListPage.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\UsersListPage.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\ReferenceWindow.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\ReferenceWindow.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignColors.dll
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csprojAssemblyReference.cache
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DepartmentListPage.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DepartmentListPage.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\CreatingDep.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\CreatingDep.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DepSettingsPage.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DepSettingsPage.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DocumentsListPage.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DocumentsListPage.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\CreatingDoc.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\CreatingDoc.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DocSettingsPage.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\OrdersListPage.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DocSettingsPage.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\OrdersListPage.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\CreatingOrd.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\OrdSettingPage.g.cs
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\CreatingOrd.baml
+C:\Users\Владелец\Desktop\MyCourseWork\MyCourseWork\obj\Debug\OrdSettingPage.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csprojAssemblyReference.cache
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\CreatingDep.g.cs
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DepartmentListPage.g.cs
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DepSettingsPage.g.cs
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\LoginPage.g.cs
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.g.cs
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\ReferenceWindow.g.cs
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\RegistrationPage.g.cs
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\UserSettingsPage.g.cs
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\UsersListPage.g.cs
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\App.g.cs
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.cache
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.lref
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.exe
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.pdb
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe.config
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.pdb
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.dll
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.dll
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignColors.dll
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\PresentationFramework.dll
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.dll
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.pdb
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.xml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.xml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.xml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\App.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\CreatingDep.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DepartmentListPage.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\DepSettingsPage.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\LoginPage.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\ReferenceWindow.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\RegistrationPage.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\Styles.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\UserSettingsPage.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\UsersListPage.baml
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.g.resources
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.Properties.Resources.resources
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.GenerateResource.cache
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.CoreCompileInputs.cache
+C:\Users\1sire\Desktop\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.CopyComplete
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe.config
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.exe
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\MyCourseWork.pdb
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.dll
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.dll
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignColors.dll
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\PresentationFramework.dll
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.dll
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.pdb
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\AutoMapper.xml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.xml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\bin\Debug\System.ValueTuple.xml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csprojAssemblyReference.cache
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\CreatingDep.g.cs
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\DepartmentListPage.g.cs
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\DepSettingsPage.g.cs
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\LoginPage.g.cs
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.g.cs
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\ReferenceWindow.g.cs
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\RegistrationPage.g.cs
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\UserSettingsPage.g.cs
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\UsersListPage.g.cs
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\App.g.cs
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.cache
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork_MarkupCompile.lref
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\App.baml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\CreatingDep.baml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\DepartmentListPage.baml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\DepSettingsPage.baml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\LoginPage.baml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\MainWindow.baml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\ReferenceWindow.baml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\RegistrationPage.baml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\Styles.baml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\UserSettingsPage.baml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\UsersListPage.baml
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.g.resources
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.Properties.Resources.resources
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.GenerateResource.cache
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.csproj.CopyComplete
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.exe
+C:\Users\1sire\Desktop\Отчёты летние + экзамен\MyCourseWork\MyCourseWork\obj\Debug\MyCourseWork.pdb

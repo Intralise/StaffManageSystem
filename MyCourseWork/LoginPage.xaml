@@ -1,0 +1,60 @@
+﻿<Page x:Class="MyCourseWork.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyCourseWork"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LoginPage">
+
+    <Grid Height="771" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="934" Margin="0,-321,-134,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="307*"/>
+            <RowDefinition Height="456*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="692*"/>
+            <ColumnDefinition Width="169*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/AuthBackground.jpg"/>
+        </Grid.Background>
+        <Button Content="Авторизация" Style="{DynamicResource ResourceKey=NoChromeButtonAuth}" BorderBrush="#FF0E86CA" HorizontalAlignment="Left" Margin="398,84,0,0" VerticalAlignment="Top" Width="137" Click="Button_Click_2" Foreground="White" Background="#0e86ca" Height="38" Grid.Row="1">
+        </Button>
+        <TextBox Text="Admin" Name="PasswordBox" Style="{DynamicResource ResourceKey=BlackTextBox}" Height="21" Margin="314,5,70,0" Language="en-en" FontSize="14" UndoLimit="1" Grid.Row="1" HorizontalAlignment="Stretch"/>
+        <TextBox Text="Admin" Name="LoginBox"  Style="{DynamicResource ResourceKey=BlackTextBox}" Height="22" Margin="313,276,0,0"  Language="en-en" Width="308" UndoLimit="1" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="2.203"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.212"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+        <Button Content="Забыли пароль?"  Style="{DynamicResource ResourceKey=BlueLink}" HorizontalAlignment="Left" Margin="425,184,0,0" VerticalAlignment="Top" Width="95" Grid.Row="1" Height="19" Click="Button_Click_4">
+        </Button>
+
+        <Button Content="Create Fake Data" Style="{DynamicResource ResourceKey=BlueLink}" Margin="27,47,564,242" Click="Button_Click_3"/>
+
+        <Button Content="Создайте учётную запись!" Style="{DynamicResource ResourceKey=BlueLink}" HorizontalAlignment="Left" Margin="398,140,0,0" VerticalAlignment="Top" Width="154" Grid.Row="1" Height="19" RenderTransformOrigin="0.516,-0.105" Click="Button_Click_1">
+        </Button>
+
+        <Image HorizontalAlignment="Left" Height="143" Margin="356,116,0,0" VerticalAlignment="Top" Width="222" Source="Images/logo.png"/>
+
+        <TextBlock  Name="ErrorLoginMessage" Style="{DynamicResource ResourceKey=ErrorTextBox}" Visibility="Hidden" Margin="651,278,0,8" Width="116" Grid.ColumnSpan="2" VerticalAlignment="Stretch"><Run Text="Неверно введён логин"/><LineBreak/><Run/></TextBlock>
+
+        <TextBlock  Name="ErrorPasswordMessage" Style="{DynamicResource ResourceKey=ErrorTextBox}" Visibility="Hidden" Margin="651,10,0,0" Width="124" Height="11" Grid.Row="1" Grid.ColumnSpan="2"><Run Text="Неверно введён "/><Run Text="пароль"/><LineBreak/><Run/></TextBlock>
+
+        <Button Content="" Style="{DynamicResource ResourceKey=NoChromeButtonExit}" Grid.Column="1" HorizontalAlignment="Left" Margin="142,38,0,0" VerticalAlignment="Top" Width="48" Height="36" Click="Button_Click" RenderTransformOrigin="0.573,1.458" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush ImageSource = "Images/Krest.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>

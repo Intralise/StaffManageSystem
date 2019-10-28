@@ -1,0 +1,28 @@
+﻿<Page x:Class="MyCourseWork.DepSettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyCourseWork"
+      mc:Ignorable="d" 
+      Title="DepSettingsPage" Height="610" Width="872">
+
+	<Grid HorizontalAlignment="Left" Width="872">
+		<Grid.Background>
+			<ImageBrush ImageSource="Images/AuthBackground.jpg"/>
+		</Grid.Background>
+		<TextBox x:Name="AppHeader" Style="{DynamicResource ResourceKey=BlackTextBox}" TextAlignment="Center"  MaxLength="15" Height="22" Margin="284,235,287,0" Language="en-en" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" />
+		<TextBox x:Name="Brekage" Style="{DynamicResource ResourceKey=BlackTextBox}" TextAlignment="Center" MaxLength="15" Height="22" Margin="284,275,287,0" Language="en-en" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" />
+		<TextBox  x:Name="Room" Style="{DynamicResource ResourceKey=BlackTextBox}" TextAlignment="Center" MaxLength="15" Height="22" Margin="284,315,287,0" Language="en-en" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch"/>
+		<Image HorizontalAlignment="Left" Height="143" Margin="321,73,0,0" VerticalAlignment="Top" Width="222" Source="Images/logo.png"/>
+		<Button Content="Изменить" Style="{DynamicResource ResourceKey=NoChromeButtonAuth}" BorderBrush="#FF0E86CA" HorizontalAlignment="Left" Margin="364,508,0,0" VerticalAlignment="Top" Width="137"  Foreground="White" Background="#0e86ca" Height="38" RenderTransformOrigin="0.526,3.342" Click="Button_Click_2"/>
+		<Button Content="" Style="{DynamicResource ResourceKey=NoChromeButtonExit}" HorizontalAlignment="Left" Margin="814,10,0,0" VerticalAlignment="Top" Width="48" Height="36" Click="Button_Click" RenderTransformOrigin="0.573,1.458">
+			<Button.Background>
+				<ImageBrush ImageSource = "Images/Krest.png"/>
+			</Button.Background>
+		</Button>
+		<TextBox  x:Name="Author" Style="{DynamicResource ResourceKey=BlackTextBox}" TextAlignment="Center" MaxLength="15" Height="22" Margin="284,356,287,0" Language="en-en" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch"/>
+		<TextBox  x:Name="Date" Style="{DynamicResource ResourceKey=BlackTextBox}" TextAlignment="Center" MaxLength="15" Height="22" Margin="284,400,287,0" Language="en-en" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch"/>
+		<TextBox  x:Name="Answer" Style="{DynamicResource ResourceKey=BlackTextBox}" TextAlignment="Center" MaxLength="15" Height="22" Margin="284,441,287,0" Language="en-en" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch"/>
+	</Grid>
+</Page>

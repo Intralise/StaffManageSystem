@@ -1,0 +1,38 @@
+﻿<Page x:Class="MyCourseWork.DepartmentListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyCourseWork"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DepartmentListPage">
+
+	<Grid Height="771" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="934" Margin="0,-321,-134,0">
+		<Grid.Background>
+			<ImageBrush ImageSource="Images/MainBackground.png"/>
+		</Grid.Background>
+		<Image Source="Images/MainMenuBar.png" HorizontalAlignment="Left" Height="2" VerticalAlignment="Top" Width="218" RenderTransformOrigin="0.5,0.406" Margin="0,235,0,0"/>
+		<Image Source="Images/MainMenuBar.png" HorizontalAlignment="Left" Height="2" Margin="0,294,0,0" VerticalAlignment="Top" Width="218" RenderTransformOrigin="0.5,0.406"/>
+		<Button Content="&#xA;              Сотрудники" Style="{DynamicResource MainMenuPoint}" VerticalAlignment="Top" Height="60" Margin="0,177,0,0"  Click="Button_Click_9"/>
+		<Button Content="&#xD;&#xA;                  Заявки" Style="{DynamicResource MainMenuPoint}" HorizontalAlignment="Left" Margin="0,234,0,0" VerticalAlignment="Top" Width="218" Height="60" Click="Button_Click_5"/>
+		<Border Style="{DynamicResource ResourceKey=MainMenuPointBackground}" BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Left" Height="60" Margin="0,237,0,0" VerticalAlignment="Top" Width="218"/>
+
+		<Image Source="Images/MainMenuBar.png" HorizontalAlignment="Left" Height="2" Margin="0,175,0,0" VerticalAlignment="Top" Width="218" RenderTransformOrigin="0.5,0.406"/>
+		<DataGrid   BorderThickness="0" Background="Transparent" MinColumnWidth="115.5"  MaxColumnWidth="115.5"  x:Name="ApplicationsGrid" SelectedValuePath="AppHeader" RowStyle="{DynamicResource BlueDataGridRow}" Style="{DynamicResource ResourceKey=BlueDataGrid}" ColumnHeaderStyle="{DynamicResource BlueDataGridHeader}" HeadersVisibility="Column" AutoGenerateColumns="True" Margin="223,175,0,0" RenderTransformOrigin="0.498,0.582"  MouseDoubleClick="EmployeesGrid_MouseDoubleClick" Height="463" Width="711">
+		</DataGrid>
+		<Button Content="Оформить заявку" Style="{DynamicResource ResourceKey=NoChromeButtonAuth}" BorderBrush="#FF0E86CA" HorizontalAlignment="Left" Margin="218,692,0,0" VerticalAlignment="Top" Width="196"  Foreground="White" Background="#0e86ca" Height="38" RenderTransformOrigin="0.526,3.342" Click="Button_Click"/>
+		<Button Content="Удалить заявку" Style="{DynamicResource ResourceKey=NoChromeButtonAuth}" BorderBrush="#FF0E86CA" HorizontalAlignment="Left" Margin="436,692,0,0" VerticalAlignment="Top" Width="137"  Foreground="White" Background="#0e86ca" Height="38" RenderTransformOrigin="0.526,3.342" Click="Button_Click_3"/>
+		<Button Content="" Style="{DynamicResource ResourceKey=NoChromeButtonExit}" HorizontalAlignment="Left" Margin="890,10,0,0" VerticalAlignment="Top" Width="34" Height="26" Click="Button_Click_1" RenderTransformOrigin="0.573,1.458">
+			<Button.Background>
+				<ImageBrush ImageSource = "Images/Krest.png"/>
+			</Button.Background>
+		</Button>
+		<Button Content="Обновить список" Style="{DynamicResource ResourceKey=NoChromeButtonAuth}" BorderBrush="#FF0E86CA" HorizontalAlignment="Left" Margin="599,692,0,0" VerticalAlignment="Top" Width="137"  Foreground="White" Background="#0e86ca" Height="38" RenderTransformOrigin="0.526,3.342" Click="Button_Click_4"/>
+		<Button Content="Выгрузить в Excel" Style="{DynamicResource ResourceKey=NoChromeButtonAuth}" BorderBrush="#FF0E86CA" HorizontalAlignment="Left" Margin="764,692,0,0" VerticalAlignment="Top" Width="150"  Foreground="White" Background="#0e86ca" Height="38" RenderTransformOrigin="0.526,3.342" Click="Button_Click_8"/>
+		<Button Content="Сменить пользователя" HorizontalAlignment="Left" Margin="10,695,0,0" VerticalAlignment="Top" Width="196" Background="BlueViolet" Click="Button_Click_7" />
+		<TextBox x:Name="FirstDate" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="2012.02.10" TextAlignment="Center"  MaxLength="15" Height="22" Margin="550,131,266,0" Language="en-en" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" />
+		<TextBox x:Name="SecondDate" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="2012.02.23"  TextAlignment="Center"  MaxLength="15" Height="22" Margin="697,131,119,0" Language="en-en" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" />
+		<Button Content="Поиск" Style="{DynamicResource ResourceKey=NoChromeButtonAuth}" BorderBrush="#FF0E86CA" HorizontalAlignment="Left" Margin="838,131,0,0" VerticalAlignment="Top" Width="86"  Foreground="White" Background="#0e86ca" Height="22" RenderTransformOrigin="0.526,3.342" Click="Button_Click_6"/>
+	</Grid>
+</Page>
