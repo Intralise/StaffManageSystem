@@ -129,6 +129,7 @@
     <Compile Include="EmployeeContext.cs" />
     <Compile Include="GeneralManager.cs" />
     <Compile Include="AuthorizationService\LevelManager.cs" />
+    <Compile Include="GeneralValidator.cs" />
     <Compile Include="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -137,6 +138,9 @@
     </Compile>
     <Compile Include="RegistrationPage.xaml.cs">
       <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserSettingsPage.xaml.cs">
       <DependentUpon>UserSettingsPage.xaml</DependentUpon>
@@ -183,6 +187,10 @@
     <Page Include="RegistrationPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Styles.xaml">
       <SubType>Designer</SubType>

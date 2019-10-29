@@ -25,6 +25,7 @@ namespace MyCourseWork
             { return false; }
             else { return true; }
         }
+
         public IEnumerable<ApplicationsDto> GetAllDepartments()
         {
             List<ApplicationsDto> allDep = new List<ApplicationsDto>();

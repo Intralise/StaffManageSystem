@@ -33,7 +33,6 @@ namespace MyCourseWork.AuthorizationService
 
         public IEnumerable<FullEmployeeDto> GetAllUsers()
         {
-            //return _dbContext.Employee.Cast<EmployeeDto>();
             List<FullEmployeeDto> allUsers = new List<FullEmployeeDto>();
             allUsers = allUsers.ToList();
             foreach (EmployeeEntity employee in _dbContext.Employee)
