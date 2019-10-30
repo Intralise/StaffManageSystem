@@ -17,12 +17,13 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using MyCourseWork.AuthorizationService.Entities;
 using MyCourseWork.AuthorizationService.Dto;
+using MyCourseWork;
 
 namespace MyCourseWork
 {
-    public partial class RegistrationPage : Page
+    public partial class UserCreatingPage : Page
     {
-        public RegistrationPage(EmployeeContext context, Window mainWindow, Window referencesWindow)
+        public UserCreatingPage(EmployeeContext context, Window mainWindow, Window referencesWindow)
         {
             _employeeContext = context;
             _employeeManager = new EmployeeManager(_employeeContext);
@@ -31,6 +32,8 @@ namespace MyCourseWork
 
             _referencesWindow = referencesWindow;
             _referencesWindow.Content = this;
+
+            _validator = new GeneralValidator();
         }
 
         private void WindoClose(object sender, RoutedEventArgs e)
@@ -94,30 +97,25 @@ namespace MyCourseWork
 
         private void LoginBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            KeyConverter d = new KeyConverter();
-            var c = e.Text.ToCharArray();
-            e.Handled = !(Char.IsDigit(c[0]) || (c[0] >= 'a' && c[0] <= 'z' || c[0] >= 'A' && c[0] <= 'Z'));
+            e.Handled = !(_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.EngString));
         }
 
         private void Names_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            KeyConverter d = new KeyConverter();
-            var c = e.Text.ToCharArray();
-            e.Handled = !(c[0] >= 'а' && c[0] <= 'я' || c[0] >= 'А' && c[0] <= 'Я');
+
+            e.Handled = !(_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.RusString));
         }
 
         private void Birthsday_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            KeyConverter d = new KeyConverter();
-            var c = e.Text.ToCharArray();
-            e.Handled = !(Char.IsDigit(c[0]) || c[0] == '.');
+            e.Handled = !(_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.RusString) 
+                || _validator.Validate(e.Text.ToCharArray()[0], ValidateValues.Char));
         }
 
         private void Email_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            KeyConverter d = new KeyConverter();
-            var c = e.Text.ToCharArray();
-            e.Handled = !(Char.IsDigit(c[0]) || (c[0] >= 'a' && c[0] <= 'z' || c[0] >= 'A' && c[0] <= 'Z') || (c[0] == '.' || c[0] == '@'));
+            e.Handled = !(_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.RusString)
+                || _validator.Validate(e.Text.ToCharArray()[0], ValidateValues.Char));
         }
 
         private void SexBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -166,5 +164,6 @@ namespace MyCourseWork
         private EmployeeContext _employeeContext;
         private Window _mainWindow;
         private Window _referencesWindow;
+        private GeneralValidator _validator;
     }
 }

@@ -70,7 +70,7 @@ namespace MyCourseWork
         private void RegistrationPage(object sender, RoutedEventArgs e)
         {
             ReferenceWindow referenceWindow = new ReferenceWindow();
-            RegistrationPage page = new RegistrationPage(_employeeContext, _mainWindow, referenceWindow);
+            UserCreatingPage page = new UserCreatingPage(_employeeContext, _mainWindow, referenceWindow);
             referenceWindow.Content = page;
             referenceWindow.Show();
         }

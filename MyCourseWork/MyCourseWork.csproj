@@ -136,8 +136,8 @@
     <Compile Include="ReferenceWindow.xaml.cs">
       <DependentUpon>ReferenceWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RegistrationPage.xaml.cs">
-      <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    <Compile Include="UserCreatingPage.xaml.cs">
+      <DependentUpon>UserCreatingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
@@ -184,7 +184,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RegistrationPage.xaml">
+    <Page Include="UserCreatingPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
