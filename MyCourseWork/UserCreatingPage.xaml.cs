@@ -34,6 +34,8 @@ namespace MyCourseWork
             _referencesWindow.Content = this;
 
             _validator = new GeneralValidator();
+
+            EventManager.RegisterClassHandler(typeof(TextBox), TextBox.GotKeyboardFocusEvent, new RoutedEventHandler(GlobalGotFoxus));
         }
 
         private void WindoClose(object sender, RoutedEventArgs e)
@@ -66,18 +68,18 @@ namespace MyCourseWork
 
         private bool RegistrationDtoCheck()
         {
-            ErrorLoginMessage.Visibility = LoginBox.Text.Length < 16 && LoginBox.Text.Length > 2 ?
+            ErrorLoginMessage.Visibility =  LoginBox.Text.Length > 2 ?
                 Visibility.Hidden : Visibility.Visible;
-            ErrorPasswordMessage.Visibility = PasswordBox.Text.Length < 16 && PasswordBox.Text.Length > 5 ?
+            ErrorPasswordMessage.Visibility = PasswordBox.Text.Length > 5 ?
                 Visibility.Hidden : Visibility.Visible;
-            ErrorSecondNameMessage.Visibility = SecondNameBox.Text.Length < 16 && SecondNameBox.Text.Length > 2 ?
+            ErrorSecondNameMessage.Visibility = SecondNameBox.Text.Length > 2 ?
                 Visibility.Hidden : Visibility.Visible;
-            ErrorFirstNameMessage.Visibility = FirstNameBox.Text.Length < 16 && FirstNameBox.Text.Length > 2 ?
+            ErrorFirstNameMessage.Visibility =  FirstNameBox.Text.Length > 2 ?
                 Visibility.Hidden : Visibility.Visible;
-            ErrorMiddleNameMessage.Visibility = MiddleNameBox.Text.Length < 16 && MiddleNameBox.Text.Length > 2 ?
+            ErrorMiddleNameMessage.Visibility = MiddleNameBox.Text.Length > 2 ?
                 Visibility.Hidden : Visibility.Visible;
             BirthsdayDateErrorMessage.Visibility = BirthsdayBox.Text.Contains(".") 
-                && BirthsdayBox.Text.Length < 10 && BirthsdayBox.Text.Length > 7 ?
+                &&  BirthsdayBox.Text.Length > 7 ?
                 Visibility.Hidden : Visibility.Visible;
             EmailErrorMessage.Visibility = EmailBox.Text.Contains(".") 
                 && EmailBox.Text.Contains("@") 
@@ -93,23 +95,40 @@ namespace MyCourseWork
             else { return false; }
         }
 
+        private void OnStartup(StartupEventArgs e)
+        {
 
+        }
+        private void GlobalGotFoxus(object sender, RoutedEventArgs e)
+        {
+            TextBox box = (TextBox)sender;
+            if (box.Text == "Логин" || box.Text == "Пароль"
+                || box.Text == "Фамилия" || box.Text == "Имя"
+                || box.Text == "Отчество" || box.Text == "Дата рождения"
+                || box.Text == "E-mail")
+            { box.Text = ""; }
+        }
 
         private void LoginBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            e.Handled = !(_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.EngString));
+            e.Handled = !((_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.EngString)) && e.Text.Length < 16);
+        }
+
+        private void PasswordBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !((_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.EngString)) && e.Text.Length < 16);
         }
 
         private void Names_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
 
-            e.Handled = !(_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.RusString));
+            e.Handled = !((_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.RusString)) && e.Text.Length < 16) ;
         }
 
         private void Birthsday_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            e.Handled = !(_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.RusString) 
-                || _validator.Validate(e.Text.ToCharArray()[0], ValidateValues.Char));
+            e.Handled = !((_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.RusString) 
+                || _validator.Validate(e.Text.ToCharArray()[0], ValidateValues.Char)) && e.Text.Length < 10);
         }
 
         private void Email_PreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -120,44 +139,8 @@ namespace MyCourseWork
 
         private void SexBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            KeyConverter d = new KeyConverter();
             var c = e.Text.ToCharArray();
             e.Handled = !(c[0] == 'М' || c[0] == 'Ж');
-        }
-
-        private void LoginBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (LoginBox.Text == "Логин") { LoginBox.Text = ""; }
-        }
-
-        private void PasswordBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (PasswordBox.Text == "Пароль") { PasswordBox.Text = ""; }
-        }
-
-        private void SecondNameBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (SecondNameBox.Text == "Фамилия") { SecondNameBox.Text = ""; }
-        }
-       
-        private void FirstNameBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (FirstNameBox.Text == "Имя") { FirstNameBox.Text = ""; }
-        }
-
-        private void MiddleNameBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (MiddleNameBox.Text == "Отчество") { MiddleNameBox.Text = ""; }
-        }
-
-        private void BirthsdayBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (BirthsdayBox.Text == "Дата рождения") { BirthsdayBox.Text = ""; }
-        }
-
-        private void EmailBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (EmailBox.Text == "E-mail") { EmailBox.Text = ""; }
         }
 
         private EmployeeManager _employeeManager;
@@ -165,5 +148,7 @@ namespace MyCourseWork
         private Window _mainWindow;
         private Window _referencesWindow;
         private GeneralValidator _validator;
+
+
     }
 }
