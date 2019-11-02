@@ -29,13 +29,86 @@ namespace MyCourseWork
 
             _refWindow = refWindow;
             _refWindow.Content = this;
+
+            _validator = new GeneralValidator();
+
+            OnStartup();
+        }
+
+        private bool RegistrationDtoCheck()
+        {
+            ErrorAppMessage.Visibility = DepName.Text.Length > 2 ?
+                Visibility.Hidden : Visibility.Visible;
+            ErrorAuthorMessage.Visibility = Author.Text.Length > 5 ?
+                Visibility.Hidden : Visibility.Visible;
+            ErrorDateMessage.Visibility = Date.Text.Length > 2 ?
+                Visibility.Hidden : Visibility.Visible;
+            ErrorItemMessage.Visibility = Breakage.Text.Length > 2 ?
+                Visibility.Hidden : Visibility.Visible;
+            ErrorNumberMessage.Visibility = RoomNumber.Text.Length > 2 ?
+                Visibility.Hidden : Visibility.Visible;
+
+
+            if (ErrorAppMessage.Visibility == Visibility.Hidden && ErrorAuthorMessage.Visibility == Visibility.Hidden &&
+                ErrorDateMessage.Visibility == Visibility.Hidden && ErrorItemMessage.Visibility == Visibility.Hidden &&
+                ErrorNumberMessage.Visibility == Visibility.Hidden) { return true; }
+            else { return false; }
         }
 
         private void CreateApp(object sender, RoutedEventArgs e)
         {
-            ApplicationsDto dto = new ApplicationsDto() { Room = DepFunction.Text,
-                AppHeader = DepName.Text, Breakage = SummaryWorkers.Text, Author = Author.Text, Date = Date.Text, Answer = "Не исправлено" };
-            _generalManager.CreateApp(dto);
+            if (RegistrationDtoCheck())
+            {
+                ApplicationsDto dto = new ApplicationsDto()
+                {
+                    Room = RoomNumber.Text,
+                    AppHeader = DepName.Text,
+                    Breakage = Breakage.Text,
+                    Author = Author.Text,
+                    Date = Date.Text,
+                    Answer = "Не исправлено"
+                };
+                _generalManager.CreateApp(dto);
+            }
+        }
+
+        private void OnStartup()
+        {
+            EventManager.RegisterClassHandler(typeof(TextBox), TextBox.GotKeyboardFocusEvent, new RoutedEventHandler(GlobalGotFoxus));
+        }
+        private void GlobalGotFoxus(object sender, RoutedEventArgs e)
+        {
+            TextBox box = (TextBox)sender;
+            if (box.Text == "Заголовок заявки" || box.Text == "Неисправный предмет"
+                || box.Text == "Номер кабинета" || box.Text == "Автор заявки"
+                || box.Text == "Дата заявки" || box.Text == "Дата рождения")
+            { box.Text = ""; }
+        }
+
+        private void DepName_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !((_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.RusString)) && e.Text.Length < 10);
+        }
+
+        private void SummaryWorkers_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !((_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.Digit)) && e.Text.Length < 4);
+        }
+
+        private void DepFunction_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !((_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.Digit)) && e.Text.Length < 5);
+        }
+
+        private void Author_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !((_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.RusString)) && e.Text.Length < 16);
+        }
+
+        private void Date_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !((_validator.Validate(e.Text.ToCharArray()[0], ValidateValues.Char)
+                || _validator.Validate(e.Text.ToCharArray()[0], ValidateValues.Digit)) && e.Text.Length < 10 );
         }
 
         private void CloseWindow(object sender, RoutedEventArgs e)
@@ -43,6 +116,7 @@ namespace MyCourseWork
             _refWindow.Close();
         }
 
+        private GeneralValidator _validator;
         private GeneralManager _generalManager;
         private EmployeeContext _employeeContext;
         private Window _refWindow;

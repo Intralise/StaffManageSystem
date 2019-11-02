@@ -35,7 +35,7 @@ namespace MyCourseWork
 
             _validator = new GeneralValidator();
 
-            EventManager.RegisterClassHandler(typeof(TextBox), TextBox.GotKeyboardFocusEvent, new RoutedEventHandler(GlobalGotFoxus));
+            OnStartup();
         }
 
         private void WindoClose(object sender, RoutedEventArgs e)
@@ -95,9 +95,9 @@ namespace MyCourseWork
             else { return false; }
         }
 
-        private void OnStartup(StartupEventArgs e)
+        private void OnStartup()
         {
-
+            EventManager.RegisterClassHandler(typeof(TextBox), TextBox.GotKeyboardFocusEvent, new RoutedEventHandler(GlobalGotFoxus));
         }
         private void GlobalGotFoxus(object sender, RoutedEventArgs e)
         {

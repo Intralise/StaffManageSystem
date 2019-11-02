@@ -16,10 +16,10 @@
         <Grid.Background>
             <ImageBrush ImageSource="Images/AuthBackground.jpg"/>
         </Grid.Background>
-        <TextBox  x:Name="DepName" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="Заголовок заявки"  Height="21" Margin="356,192,355,0" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" Grid.Row="1"/>
+        <TextBox  x:Name="DepName" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="Заголовок заявки"  Height="21" Margin="356,192,355,0" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" Grid.Row="1" PreviewTextInput="DepName_PreviewTextInput"/>
         <Image HorizontalAlignment="Left" Height="143" Margin="326,41,0,0" VerticalAlignment="Top" Width="222" Source="Images/logo.png" Grid.RowSpan="2"/>
-        <TextBox  x:Name="SummaryWorkers" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="Неисправный предмет" Height="21" Margin="356,234,355,0" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" Grid.Row="1" />
-        <TextBox  x:Name="DepFunction" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="Номер кабинета" Height="21" Margin="356,276,355,0" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" Grid.Row="1" />
+		<TextBox  x:Name="Breakage" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="Неисправный предмет" Height="21" Margin="356,234,355,0" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" Grid.Row="1" PreviewTextInput="SummaryWorkers_PreviewTextInput"/>
+		<TextBox  x:Name="RoomNumber" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="Номер кабинета" Height="21" Margin="356,276,355,0" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" Grid.Row="1" PreviewTextInput="DepFunction_PreviewTextInput"/>
         <Button Content="Оформить заявку" Style="{DynamicResource ResourceKey=NoChromeButtonAuth}" BorderBrush="#FF0E86CA" HorizontalAlignment="Left" Margin="367,425,0,0" VerticalAlignment="Top" Width="137" Click="CreateApp" Foreground="White" Background="#0e86ca" Height="38" Grid.Row="1"/>
         <Button Content="" Style="{DynamicResource ResourceKey=NoChromeButtonExit}" HorizontalAlignment="Left" Margin="828,10,0,0" VerticalAlignment="Top" Width="34" Height="26" Click="CloseWindow" RenderTransformOrigin="0.573,1.458">
             <Button.Background>
@@ -28,8 +28,13 @@
         </Button>
 		<TextBlock x:Name="TitleBox_Copy" Style="{DynamicResource ResourceKey=BlueTextBox}" HorizontalAlignment="Left" Margin="381,128,0,0" TextWrapping="Wrap" Text="Подача заявки. Опишите неисправность" VerticalAlignment="Top" Height="20" Width="123" RenderTransformOrigin="0.381,0.4" Grid.Row="1"/>
 		<TextBlock x:Name="TitleBox_Copy1" Style="{DynamicResource ResourceKey=BlueTextBox}" HorizontalAlignment="Left" Margin="345,148,0,0" TextWrapping="Wrap" Text="Опишите неисправность" VerticalAlignment="Top" Height="20" Width="194" RenderTransformOrigin="0.381,0.4" Grid.Row="1"/>
-		<TextBox  x:Name="Author" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="Автор заявки" Height="21" Margin="356,319,355,0" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" Grid.Row="1" />
-		<TextBox  x:Name="Date" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="Дата заявки" Height="21" Margin="356,364,355,0" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" Grid.Row="1" />
+		<TextBox  x:Name="Author" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="Автор заявки" Height="21" Margin="356,319,355,0" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" Grid.Row="1" PreviewTextInput="Author_PreviewTextInput"/>
+		<TextBox  x:Name="Date" Style="{DynamicResource ResourceKey=BlackTextBox}" Text="Дата заявки" Height="21" Margin="356,364,355,0" FontSize="14" UndoLimit="1" HorizontalAlignment="Stretch" Grid.Row="1" PreviewTextInput="Date_PreviewTextInput"/>
+		<TextBlock x:Name="ErrorAppMessage" Style="{DynamicResource ResourceKey=ErrorTextBox}" Visibility="Hidden" HorizontalAlignment="Left" Margin="587,191,0,0" TextWrapping="Wrap" Text="Неверно введён заголовок " VerticalAlignment="Top" Height="20" Width="149" RenderTransformOrigin="0.381,0.4" Grid.Row="1"/>
+		<TextBlock x:Name="ErrorItemMessage" Style="{DynamicResource ResourceKey=ErrorTextBox}" Visibility="Hidden" HorizontalAlignment="Left" Margin="587,234,0,0" TextWrapping="Wrap" Text="Неверно введён предмет заявки " VerticalAlignment="Top" Height="20" Width="171" RenderTransformOrigin="0.381,0.4" Grid.Row="1"/>
+		<TextBlock x:Name="ErrorNumberMessage" Style="{DynamicResource ResourceKey=ErrorTextBox}" Visibility="Hidden" HorizontalAlignment="Left" Margin="587,276,0,0" TextWrapping="Wrap" Text="Неверно введён номер кабинета " VerticalAlignment="Top" Height="20" Width="171" RenderTransformOrigin="0.381,0.4" Grid.Row="1"/>
+		<TextBlock x:Name="ErrorAuthorMessage" Style="{DynamicResource ResourceKey=ErrorTextBox}" Visibility="Hidden" HorizontalAlignment="Left" Margin="587,319,0,0" TextWrapping="Wrap" Text="Неверно введён автор " VerticalAlignment="Top" Height="20" Width="149" RenderTransformOrigin="0.381,0.4" Grid.Row="1"/>
+		<TextBlock x:Name="ErrorDateMessage" Style="{DynamicResource ResourceKey=ErrorTextBox}" Visibility="Hidden" HorizontalAlignment="Left" Margin="587,364,0,0" TextWrapping="Wrap" Text="Неверно введена дата" VerticalAlignment="Top" Height="20" Width="149" RenderTransformOrigin="0.381,0.4" Grid.Row="1"/>
 	</Grid>
 
 </Page>
